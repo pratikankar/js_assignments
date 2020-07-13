@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 1</title>
+        
+    </head>
+    <body>
+        <h2>Assignment No. 1</h2>
+        <h3>To show current date and time</h3>
+        <script>
+            var dd = new Date();
+
+            var weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+            var day = weekday[dd.getDay()];
+
+            var time = dd.getHours() +":"+ dd.getMinutes() +":"+ dd.getSeconds();
+
+            document.write("Today is : " +day);
+            document.write("<br>");
+            document.write("Current time is : " +time);
+        </script>
+    </body>
+</html>

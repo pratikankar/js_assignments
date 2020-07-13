@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 3</title>
+    </head>
+    <body>
+        <h2>Assignment No. 3</h2>
+        <h3>To show date in different formats</h3>
+        <script>
+            var dd = new Date();
+            var format1 = dd.getMonth()+"-"+dd.getDate()+"-"+dd.getFullYear();
+            var format2 = dd.getMonth()+"/"+dd.getDate()+"/"+dd.getFullYear();
+            var format3 = dd.getDate()+"-"+dd.getMonth()+"-"+dd.getFullYear();
+            var format4 = dd.getDate()+"/"+dd.getMonth()+"/"+dd.getFullYear();
+
+            document.write("Current date in mm-dd-yyyy format : "+format1);
+            document.write("<br><br>");
+            document.write("Current date in mm/dd/yyyy format : "+format2);
+            document.write("<br><br>");
+            document.write("Current date in dd-mm-yyyy format : "+format3);
+            document.write("<br><br>");
+            document.write("Current date in dd/mm/yyyy format : "+format4);
+        </script>
+    </body>
+</html>
