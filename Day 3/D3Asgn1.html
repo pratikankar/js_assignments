@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Day 3 Assignment No. 1</h2>
+        <h3>Explore and explain various methods in console function.</h3>
+        
+        <p>
+            In javascript, the console is an object which provides access to the browser debugging console.<br>
+            The console object provides us with several different methods, like :
+            <ul>
+                <li>log()</li>
+                <li>error()</li>
+                <li>warn()</li>
+                <li>clear()</li>
+                <li>time() and timeEnd()</li>
+                <li>table()</li>
+                <li>count()</li>
+                <li>group() and groupEnd()</li>
+                <li>custom console logs</li>
+            </ul>
+        </p>
+        
+        <p>
+            <b>1. console.log()</b><br>
+            Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.<br>
+            Examples:<br>
+            console.log('This is string');  //String<br>
+            console.log(12345);             //number<br>
+            console.log(true);              //boolean<br>
+            console.log(null);              //NULL<br>
+            console.log(undefined);         //Undefined<br>
+            console.log([1, 2, 3, 4]);      // array inside log<br> 
+            console.log({a:1, b:2, c:3});   // object inside log<br>
+        </p>
+        <script>
+            console.log('This is string');  //String
+            console.log(12345);             //number
+            console.log(true);              //boolean
+            console.log(null);              //NULL
+            console.log(undefined);         //Undefined
+            console.log([1, 2, 3, 4]);      // array inside log 
+            console.log({a:1, b:2, c:3});   // object inside log
+        </script>
+        
+        <p>
+            <b>2. console.error()</b><br>
+            Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.<br>
+            Example:<br>
+            console.error('This is just a demo error');<br>
+        </p>
+        <script>
+            console.error('This is just a demo error');
+        </script>
+        
+        <p>
+            <b>3. console.warn()</b><br>
+            Used to log warning message to the console. By default the warning message will be highlighted with yellow color.<br>
+            Example:<br>
+            console.warn('This is just a demo warning.');<br>
+        </p>
+        <script>
+            console.warn('This is just a demo warning.');
+        </script>
+
+        <p>
+            <b>4. console.clear()</b><br>
+            Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like :<br>
+            ‘Console was cleared’ while in firefox no message is returned.<br>
+            Example:<br>
+            console.clear();<br>
+        </p>
+        <script>
+            console.clear();
+        </script>
+        
+        <p>
+            <b>5. console.time() and console.timeEnd()</b><br>
+            Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods<br>
+            provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console).<br>
+            Example:<br>
+            onsole.time('x'); <br>
+            let function1 =  function(){ <br>
+                console.log('First function is running'); <br>
+            } <br>
+            let function2 = function(){ <br>
+                console.log('Second function is running..'); <br>
+            } <br>
+            function1();                    // calling function1(); <br>
+            function2();                    // calling function2(); <br>
+            console.timeEnd('x');<br>
+        </p>
+        <script>
+            console.time('x'); 
+            let function1 =  function(){ 
+                console.log('First function is running'); 
+            } 
+            let function2 = function(){ 
+                console.log('Second function is running..'); 
+            } 
+            function1();                    // calling function1(); 
+            function2();                    // calling function2(); 
+            console.timeEnd('x'); 
+        </script>
+
+        <p>
+            <b>6. console.table()</b></br>
+            This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.<br>
+            Example:<br>
+            console.table({'Pratik':50000, 'Vikram':45000});<br>
+        </p>
+        <script>
+            console.table({'Pratik':50000, 'Vikram':45000});
+        </script>
+
+        <p>
+            <b>7. console.count()</b><br>
+            This method is used to count the number that the function hit by this counting method.<br>
+            Example:<br>
+            for(let i=0;i&lt;5;i++){ <br>
+                console.count(i);   <br>
+            }<br>
+        </p>
+        <script>
+            for(let i=0;i<5;i++){ 
+                console.count(i); 
+            } 
+        </script>
+
+        <p>
+            <b>8. console.group() and console.groupEnd()</b><br>
+            group() and groupEnd() methods of the console object allows us to group contents in a separate block, <br>
+            which will be indented. Just like the time() and the timeEnd() they also accepts label, again of same value.<br>
+            Example:<br>
+            console.group('demo'); <br>
+            console.warn('It\'s a warning!'); <br>
+            console.error('Error is here'); <br>
+            console.log('Lets upgrade js'); <br>
+            console.groupEnd('demo'); <br>
+            console.log('next assignment');<br>
+        </p>
+        <script>
+            console.group('demo'); 
+            console.warn('It\'s a warning!'); 
+            console.error('Error is here'); 
+            console.log('Lets upgrade js'); 
+            console.groupEnd('demo'); 
+            console.log('next assignment'); 
+        </script>
+
+        <p>
+           <b>9. Custom Console Logs</b><br>
+            User can add Styling to the console logs in order to make logs Custom . The Syntax for it is to add the css styling<br>
+            as a parameter to the logs which will replace %c in the logs as shown in the example below.<br>
+            Example:<br>
+            const spacing = '10px'; <br>
+            const styles = `padding: ${spacing}; background-color: white; color: green; font-style: italic; border: 1px solid black; font-size: 2em;`<br> 
+            console.log('%cLets Upgrade Assignments by Pratik Ankar', styles);<br>
+        </p>
+        <script>
+            const spacing = '10px'; 
+            const styles = `padding: ${spacing}; background-color: white; color: green; font-style: italic; border: 1px solid black; font-size: 2em;` 
+            console.log('%cLets Upgrade Assignments by Pratik Ankar', styles);
+        </script>
+    </body>
+</html>
