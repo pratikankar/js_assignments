@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Day 2 Assignment No. 2</h2>
+        <h3>Explain with examples the remaining methods of String and Array</h3>
+        <p>
+            <b>String Methods Description</b><br>
+            <b>1. search() : </b>Searches a string for a specified value, or regular expression, and returns the position of the match.<br>
+            Example:<br>
+                var str = "Hello there!";<br>
+                var ser = str.search("there");<br><br><br>
+            
+            <b>2. slice() : </b>Extracts a part of a string and returns a new string.<br>
+            Example:<br>
+                var str = "Hello World!";<br>
+                var sls = str.slice(0, 5);<br><br><br>
+
+            <b>3. split() : </b>Splits a string into an array of substrings.<br>
+            Example:<br>
+                var str = "How are you doing today?";<br>
+                var spl = str.split(" ");<br><br><br>
+
+            <b>4. startsWith() : </b>Checks whether a string begins with specified characters array.<br>
+            Example:<br>
+                var str = "Hello world, welcome to the universe.";<br>
+                var start = str.startsWith("Hello");<br><br><br>
+
+            <b>5. substr() : </b>Extracts the characters from a string, beginning at a specified start position, and through the specified number of character.<br>
+            Example:<br>
+                var str = "Hello world!";<br>
+                var sub = str.substr(1, 4);<br><br><br>
+
+            <b>6. substring() : </b>Extracts the characters from a string, between two specified indices.<br>
+            Example:<br>
+                    var str = "Hello world!";<br>
+                    var subs = str.substring(1, 4);<br><br><br>
+        </p>
+
+        <p>
+            <b>Array Methods Description</b><br>
+            <b>1. reduceRight() : </b>Reduce the values of an array to a single value (going right-to-left).<br>
+            Example:<br>
+                var numbers = [180, 150, 112];<br>
+                document.getElementById("demo").innerHTML = numbers.reduceRight(myFunc);<br>
+                function myFunc(total, num) {<br>
+                    return total - num;<br>
+                }<br><br><br>
+
+            <b>2. reverse() : </b>Reverses the order of the elements in an array.<br>
+            Example:<br>
+                var countries = ["India", "Austria", "Bangladesh", "Germany","Japan"."New Zealand"];<br>
+                countries.reverse();<br><br><br>
+
+            <b>3. shift() : </b>Removes the first element of an array, and returns that element.<br>
+            Example:<br>
+                var countries = ["India", "Austria", "Bangladesh", "Germany","Japan"."New Zealand"];<br>
+                countries.shift();<br><br><br>
+
+            <b>4. slice() : </b>Selects a part of an array, and returns the new array.<br>
+            Example:<br>
+                var countries = ["India", "Austria", "Bangladesh", "Germany","Japan"."New Zealand"];<br>
+                var slice_array = countries.slice(1, 3);<br>
+        </p>
+    </body>
+</html>
