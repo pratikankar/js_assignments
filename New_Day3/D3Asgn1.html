@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Day 3 Assignment No. 1</h2>
+        <h3>Take a number from a user and write a function which checks whether the number is even or
+            odd. Assign the result to a variable and log that variable in the console.</h3>
+        
+        <script>
+                function checknum(x) {
+                    if(num % 2 == 0) 
+                        n="even."
+                    else
+                        n="odd.";
+                    
+                    return n;
+                }
+                let num=prompt("Please enter a number to check:");
+                let n;
+                n=checknum(num);
+                console.log("The number entered is " + num + " and Number is " + n);
+            </script>
+    </body>
+</html>

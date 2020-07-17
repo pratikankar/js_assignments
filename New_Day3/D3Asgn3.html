@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 3</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Day 3 Assignment No. 3</h2>
+        <h3>Write a program to take marks as input from the user and grade him accordingly. Use Conditional
+            statements. Also the same code using switch or ternary</h3>
+        
+        <script>
+            let marks = prompt("Enter your marks :"); 
+
+            //using conditional statements
+
+            if(marks >= 91 && marks <= 100){
+                console.log(`Great! Your marks are ${marks} and the grade is "O".`);
+            }
+            else if(marks >= 81 && marks <= 90){
+                console.log(`Great! Your marks are ${marks} and the grade is "A+".`);
+            }
+            else if(marks >= 71 && marks <= 80){
+                console.log(`Wow! Your marks are ${marks} and the grade is "A".`);
+            }
+            else if(marks >= 61 && marks <= 70){
+                console.log(`Good! Your marks are ${marks} and the grade is "B+".`);
+            }
+            else if(marks >= 51 && marks <= 60){
+                console.log(`Nice! Your marks are ${marks} and the grade is "B".`);
+            }
+            else{
+                console.log(`Sorry! Your marks are ${marks} and the grade is "F".`);
+            }
+
+            //using switch
+            let grade;
+            if(marks >= 91 && marks <= 100){
+                grade = "O";
+            }
+            else if(marks >= 81 && marks <= 90){
+                grade = "A+";
+            }
+            else if(marks >= 71 && marks <= 80){
+                grade = "A";
+            }
+            else if(marks >= 61 && marks <= 70){
+                grade = "B+";
+            }
+            else if(marks >= 51 && marks <= 60){
+                grade = "B";
+            }
+            else{
+            grade = "F";
+            }
+
+            switch (grade) {
+                case "O":
+                            console.log(`Great! Your marks are ${marks} and the grade is "O".`);        
+                            break;
+                case "A+":
+                            console.log(`Great! Your marks are ${marks} and the grade is "A+".`);        
+                            break;
+                case "A":
+                            console.log(`Wow! Your marks are ${marks} and the grade is "A".`);        
+                            break;        
+                case "B+":
+                            console.log(`Good! Your marks are ${marks} and the grade is "B+".`);        
+                            break;
+                case "B":
+                            console.log(`Nice! Your marks are ${marks} and the grade is "B".`);        
+                            break;
+                default:
+                            console.log(`Sorry! Your marks are ${marks} and the grade is "F".`);
+                            break;
+            }
+ 
+            //using ternary operator
+
+            let grade1 = marks >= 91 && marks <= 100 ? `Great! Your marks are ${marks} and the grade is "O".` : 
+                        marks >= 81 && marks <= 90 ? `Great! Your marks are ${marks} and the grade is "A+"` : 
+                        marks >= 71 && marks <= 80 ? `Wow! Your marks are ${marks} and the grade is "A"` : 
+                        marks >= 61 && marks <= 70 ? `Good! Your marks are ${marks} and the grade is "B+"` : 
+                        marks >= 51 && marks <= 60 ? `Nice! Your marks are ${marks} and the grade is "B"` : 
+                        `Sorry! Your marks are ${marks} and the grade is "F".`;
+            console.log(grade1);
+        </script>
+    </body>
+</html>
