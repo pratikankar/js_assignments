@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 4</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Day 4 Assignment No. 4</h2>
+        <h3>Make a Calculator in Javascript which can do operations as Addtion, Subtraction, Multiplication, Division,
+            Square root, Percentage.</h3>
+        
+        <br><br>
+        <div align="center">
+        <h2>Calculator</h2>
+        <input type="text" id='x'/><br>
+        <input type="text" id='y'/><br>
+        <input type="text" id='result'/><br>
+        <button onclick="result('1')">Addition</button><br>
+        <button onclick="result('2')">Subtraction</button><br>
+        <button onclick="result('3')">Multiplication</button><br>
+        <button onclick="result('4')">Division</button><br>
+        <button onclick="result('5')">Square Root</button><br>
+        <button onclick="result('6')">Modulus</button>
+        </div>
+        <script>
+            function result(r){
+                var num1=parseFloat(document.getElementById('x').value);
+                var num2=parseFloat(document.getElementById('y').value);
+                var res;
+                var a=r;
+    
+                switch(c){
+                    case '1':
+                                res=num1+num2;
+                                break;
+                    case '2':
+                                res=num1-num2;
+                                break;
+                    case '3':
+                                res=num1*num2;
+                                break;
+                    case '4': 
+                                res=num1/num2;
+                                break;
+                    case '5':
+                                res=Math.sqrt(num1);
+                                break;
+                    case '6':
+                                res=num1%num2;
+                                break;
+                    default:
+                                break;
+                    }
+                    document.getElementById('result').value=res;
+}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Day 4 Assignment No. 2</h2>
+        <h3>Destructure the following object</h3>
+        <script>
+            console.log("destructuring objects");
+            const student={
+                name:"Helsinki",
+                age:24,
+                projects:{
+                    diceGame: "Two player dice game using JavaScript"
+                }
+            }
+            
+            console.log(student);
+            console.log(student.name);
+            console.log(student.age);
+            console.log(student.projects.diceGame);
+           
+            //Destructuring object
+            const {name,age,projects}=student;
+            console.log(name,age,projects);
+        </script>
+    </body>
+</html>

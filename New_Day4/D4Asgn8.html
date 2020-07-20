@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>LetsUpgrade JavaScript Assignment No. 8</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Day 4 Assignment No. 8</h2>
+        <h3>Replace Function Expressions with arrow functions in the code</h3>
+
+        <script>
+            console.log("Arrow functions: ");
+            let ask=(question,yes,no) => {if(confirm(question)) yes()
+            else no();
+            }
+            let t  = ask("Do you agree?",function(){alert("You agreed.");},function(){alert("You cancelled the execution.")});
+            console.log(t);
+        </script>
+    </body>
+</html>
